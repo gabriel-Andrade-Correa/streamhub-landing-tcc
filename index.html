@@ -247,10 +247,14 @@
       margin-bottom: 1.05rem;
     }
 
+    .hero-title-line {
+      display: block;
+    }
+
     #hero-word {
       color: var(--app-primary);
-      display: inline-block;
-      min-width: 9.5ch;
+      display: block;
+      width: max-content;
       text-shadow: 0 6px 24px rgba(91, 72, 245, 0.2);
       transition: opacity 0.28s ease, transform 0.28s ease;
     }
@@ -872,7 +876,12 @@
       <div class="wrap hero-grid">
         <div class="fade-up">
           <span class="tag">Projeto TCC | App mobile + API inteligente</span>
-          <h1>Escolher o que assistir ficou <span id="hero-word">simples</span> com o StreamHub.</h1>
+          <h1>
+            <span class="hero-title-line">Escolher o que</span>
+            <span class="hero-title-line">assistir ficou</span>
+            <span id="hero-word">simples</span>
+            <span class="hero-title-line">com o StreamHub.</span>
+          </h1>
           <p>
             O StreamHub centraliza catalogos de streaming, personaliza recomendacoes e abre
             diretamente os apps oficiais. Menos tempo procurando, mais tempo assistindo.
